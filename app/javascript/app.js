@@ -47,17 +47,17 @@ function setScreenWidth(){
 function isScreenWidth(){
   let min, max
 
-  switch(args.length){
+  switch(arguments.length){
     case 1: {
-      if(typeof args[0] == 'string') args[0] = screenWidths[args[0]].min
-      min = args[0]
+      if(typeof arguments[0] == 'string') arguments[0] = screenWidths[arguments[0]].min
+      min = arguments[0]
       max = -1
     } break
     case 2: {
-      if(typeof args[0] == 'string') args[0] = screenWidths[args[0]].min
-      if(typeof args[1] == 'string') args[1] = screenWidths[args[1]].max
-      min = args[0]
-      max = args[1]
+      if(typeof arguments[0] == 'string') arguments[0] = screenWidths[arguments[0]].min
+      if(typeof arguments[1] == 'string') arguments[1] = screenWidths[arguments[1]].max
+      min = arguments[0]
+      max = arguments[1]
     } break
   }
 
