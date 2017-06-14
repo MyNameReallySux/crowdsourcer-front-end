@@ -112,7 +112,6 @@ $(window).resize(function($){
 ########################## */
 
 // This should be the only $(document.ready()) function in the entire project,
-// aside from page specif
 $(document).ready(function(){
   console.info('Document is ready!')
 })
